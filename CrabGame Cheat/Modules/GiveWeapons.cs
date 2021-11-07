@@ -20,7 +20,7 @@ namespace JNNJMods.CrabGameCheat.Modules
 
         public static void SpawnItem(ItemData data)
         {
-            ServerSend.ForceGiveItem(SteamUser.GetSteamID().m_SteamID, data.itemID, data.objectID);
+            PlayerInventory.Instance.ForceGiveItem(ItemManager.GetItemById(data.itemID));
         }
 
         public override void Update()
