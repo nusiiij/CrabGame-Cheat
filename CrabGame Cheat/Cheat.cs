@@ -54,7 +54,7 @@ namespace JNNJMods.CrabGameCheat
             gui.AddWindow((int)WindowIDs.COMBAT, "Combat", 400, 90, 320, 400);
             gui.AddWindow((int)WindowIDs.RENDER, "Render", 70, 525, 320, 400);
             gui.AddWindow((int)WindowIDs.OTHER, "Other", 70, 90, 320, 400);
-            gui.AddWindow((int)WindowIDs.ITEM_SPAWNER, "Item Spawner", 400, 525, 320, 400);
+            gui.AddWindow((int)WindowIDs.ITEM_SPAWNER, "Item Spawner", 400, 525, 320, 500);
             //Read Config
             try
             {
