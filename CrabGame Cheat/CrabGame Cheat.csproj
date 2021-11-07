@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'BepInEx|AnyCPU'">
-    <OutputPath>bin\BepInEx\</OutputPath>
+    <OutputPath>F:\SteamLibrary\steamapps\common\Crab Game\BepInEx\plugins\</OutputPath>
     <DefineConstants>TRACE;BEPINEX</DefineConstants>
     <AssemblyName>CrabGame_Cheat_BepInEx</AssemblyName>
     <Optimize>true</Optimize>
@@ -82,6 +82,7 @@
     <Compile Include="Loader\MelonLoad.cs" />
     <Compile Include="Modules\AirJumpModule.cs" />
     <Compile Include="Modules\AntiBoundKillsModule.cs" />
+    <Compile Include="Modules\GiveWeapons.cs" />
     <Compile Include="Modules\ClickTPModule.cs" />
     <Compile Include="Modules\ESPModule.cs" />
     <Compile Include="Modules\Base\SingleElementModuleBase.cs" />
@@ -120,6 +121,13 @@
     <Compile Include="WindowIDs.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Facepunch.Steamworks.Win64">
+      <HintPath>..\Libraries\BepInEx\Facepunch.Steamworks.Win64.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\BepInEx\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -134,11 +142,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup Condition="'$(IsBepInEx)'=='true'">
-    <Reference Include="Newtonsoft.Json">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Libraries\BepInEx\Newtonsoft.Json.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="0Harmony">
       <HintPath>..\Libraries\BepInEx\0Harmony.dll</HintPath>
       <Private>False</Private>
@@ -557,11 +560,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup Condition="'$(IsMelonLoader)'=='true'">
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Libraries\MelonLoader\Newtonsoft.Json.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="ACTk.Examples.Genuine.Runtime">
       <HintPath>..\Libraries\MelonLoader\ACTk.Examples.Genuine.Runtime.dll</HintPath>
       <Private>False</Private>
