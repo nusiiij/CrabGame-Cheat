@@ -46,3 +46,7 @@ A Cheat for the Game [CrabGame](https://store.steampowered.com/app/1782210/Crab_
  - Speed
  - Give Weapons
  - ...and more to come
+
+## DISCLAIMER
+
+This cheat is only for testing purposes. We do not encourage hacking when you're not allowed, and will not bear liability for your actions.
