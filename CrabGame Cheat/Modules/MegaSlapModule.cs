@@ -14,7 +14,6 @@ namespace JNNJMods.CrabGameCheat.Modules
 
         [JsonIgnore]
         private float
-            punchCooldown,
             maxDistance;
 
         public MegaSlapModule(ClickGUI gui) : base("Mega Slap", gui, WindowIDs.COMBAT)
